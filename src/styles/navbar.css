@@ -1,0 +1,170 @@
+#navbar {
+  max-width: 85%;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+#logo {
+  align-items: center;
+  display: flex;
+}
+
+#logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo-text {
+  text-decoration: none;
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  font-weight: 700;
+  color: var(--dark-orange);
+}
+
+#navigation {
+  align-items: center;
+}
+
+.navlinks {
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--main-bg-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  position: relative;
+  transition: all 100ms ease;
+  padding: 1rem;
+}
+
+.navlinks:hover {
+  border-radius: 5px;
+  color: var(--dark-orange);
+}
+
+#nav {
+  padding: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#main-nav {
+  position: relative;
+}
+
+#hamburgerbtn {
+  position: absolute;
+  top: 44px;
+  right: 44px;
+  z-index: 3000;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#hamburgerbtn img {
+  width: 40px;
+}
+
+#mobile-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  width: 100%;
+  height: 10%;
+  padding-left: 2rem;
+  margin: auto;
+}
+
+#mobile-navbar ul {
+  padding-top: 2rem;
+  list-style-type: none;
+}
+
+#mobile-navbar ul a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 4rem;
+}
+
+#mobile-navbar ul a:hover {
+  padding: 1rem;
+  color: var(--dark-orange);
+}
+
+/* ipad */
+@media (max-width: 1024px) {
+  #navigation {
+    display: none;
+  }
+
+  #hamburgerbtn {
+    visibility: visible;
+  }
+
+  #logo img {
+    height: 40px;
+  }
+  
+  .logo-text {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+/* iphone */
+@media (max-width: 576px) {
+  #navigation {
+    display: none;
+  }
+
+  #hamburgerbtn {
+    top: 26px;
+    right: 30px;
+    visibility: visible;
+  }
+
+  #logo img {
+    height: 26px;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+  }
+
+  #mobile-navbar ul a {
+    font-size: 0.8rem;
+  }
+
+  #mobile-navbar {
+    padding-left: 1rem;
+  }
+
+  .navlinks {
+    margin-top: -10rem;
+    font-size: 1rem;
+    margin: 0rem;
+    padding: 0.9rem;
+  }
+
+  #mobile-navbar ul {
+    padding-top: 1rem;
+  }
+}
